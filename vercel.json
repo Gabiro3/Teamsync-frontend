@@ -1,12 +1,49 @@
 {
-  "rewrites": [
-    { "source": "https://teamsync-frontend-one.vercel.app/workspace/:id", "destination": "https://teamsync-frontend-one.vercel.app/workspace/[workspaceId]" },
-    { "source": "/workspace/:id/tasks", "destination": "/workspace/[workspaceId]/tasks" },
-    { "source": "/workspace/:id/members", "destination": "/workspace/[workspaceId]/members" },
-    { "source": "/workspace/:workspaceId/reports", "destination": "/workspace/[workspaceId]/reports" },
-    { "source": "/workspace/:workspaceId/reports/:reportId", "destination": "/workspace/[workspaceId]/reports/[reportId]" },
-    { "source": "/workspace/:workspaceId/settings", "destination": "/workspace/[workspaceId]/settings" },
-    { "source": "/workspace/:workspaceId/project/:projectId", "destination": "/workspace/[workspaceId]/project/[projectId]" },
-    { "source": "/(.*)", "destination": "/" }
-  ]
-}
+    "rewrites": [
+      {
+        "source": "/workspace/:workspaceId",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/workspace/:workspaceId/tasks",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/workspace/:workspaceId/members",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/workspace/:workspaceId/reports",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/workspace/:workspaceId/reports/:reportId",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/workspace/:workspaceId/settings",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/workspace/:workspaceId/project/:projectId",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/invite/workspace/:inviteCode/join",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/sign-up",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/google/oauth/callback",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/(.*)",
+        "destination": "/index.html"
+      }
+    ]
+  }
+  
