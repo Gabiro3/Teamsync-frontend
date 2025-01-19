@@ -6,7 +6,7 @@
       { "source": "/workspace/:workspaceId/reports", "destination": "/workspace/[workspaceId]/reports" },
       { "source": "/workspace/:workspaceId/reports/:reportId", "destination": "/workspace/[workspaceId]/reports/[reportId]" },
       { "source": "/workspace/:workspaceId/settings", "destination": "/workspace/[workspaceId]/settings" },
-      { "source": "/workspace/:workspaceId/project/:projectId", "destination": "/workspace/[workspaceId]/project/[projectId]" }
+      { "source": "/workspace/:workspaceId/project/:projectId", "destination": "/workspace/[workspaceId]/project/[projectId]" },
+      { "source": "/(.*)", "destination": "/workspace/:workspaceId" }
     ]
   }
-  
