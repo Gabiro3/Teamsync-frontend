@@ -1,5 +1,6 @@
 {
     "rewrites": [
+      { "source": "/workspace/:workspaceId", "destination": "/workspace/[workspaceId]" },
       { "source": "/workspace/:workspaceId/tasks", "destination": "/workspace/[workspaceId]/tasks" },
       { "source": "/workspace/:workspaceId/members", "destination": "/workspace/[workspaceId]/members" },
       { "source": "/workspace/:workspaceId/reports", "destination": "/workspace/[workspaceId]/reports" },
