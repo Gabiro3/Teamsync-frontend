@@ -1,6 +1,6 @@
 {
   "rewrites": [
-    { "source": "/workspace/:id", "destination": "/workspace/[workspaceId]" },
+    { "source": "https://teamsync-frontend-one.vercel.app/workspace/:id", "destination": "https://teamsync-frontend-one.vercel.app/workspace/[workspaceId]" },
     { "source": "/workspace/:id/tasks", "destination": "/workspace/[workspaceId]/tasks" },
     { "source": "/workspace/:id/members", "destination": "/workspace/[workspaceId]/members" },
     { "source": "/workspace/:workspaceId/reports", "destination": "/workspace/[workspaceId]/reports" },
